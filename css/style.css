@@ -1,0 +1,91 @@
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background: hsl(0, 0%, 100%);
+  max-width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 20px;
+}
+
+#container-values {
+  width: 45%;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+#container-results {
+  width: 45%;
+  background-color: hsl(183, 100%, 15%);
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  font-size: 24px;
+  color: hsl(184, 14%, 56%);
+  width: 97%;
+  height: 30px;
+  background: url(../images/icon-dollar.svg) no-repeat left, hsl(189, 41%, 97%);
+  background-position: 7px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+input::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+
+.strong-cyan {
+  color: hsl(172, 67%, 45%);
+}
+.very-dark-cyan {
+  color: hsl(183, 100%, 15%);
+}
+.grayvish-cyan1 {
+  color: hsl(186, 14%, 43%);
+}
+.grayvish-cyan2 {
+  color: hsl(184, 14%, 56%);
+}
+.l-grayvish-cyan1 {
+  color: hsl(185, 41%, 84%);
+}
+.l-grayvish-cyan2 {
+  color: hsl(189, 41%, 97%);
+}
+.white {
+  color: hsl(0, 0%, 100%);
+}
