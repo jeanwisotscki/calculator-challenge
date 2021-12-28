@@ -138,6 +138,27 @@ button:hover {
 
 /* STYLES AND CLASSES FOR CONTAINER RESULTS
 ************************************************/
+#tip-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 40px;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 20px;
+}
+.value-span {
+  display: block;
+  margin-left: 50px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: aquamarine;
+}
 
 #container-results {
   width: 45%;
