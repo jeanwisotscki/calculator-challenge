@@ -35,6 +35,10 @@ button:hover {
 
 /* STYLES AND CLASSES FOR CONTAINER VALUES
 ************************************************/
+.error-input {
+  outline: none;
+  border: 3px solid rgb(209, 68, 68) !important;
+}
 
 .error-span {
   display: block !important;

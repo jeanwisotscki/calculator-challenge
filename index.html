@@ -19,8 +19,11 @@
     <div id="container-values">
 
       <form id="bill-form">
-        <label class="label" for="bill-value">Bill</label>
-        <input class="input" type="text" name="bill-value" id="bill-value" placeholder="0">
+        <div class="container-label">
+          <label class="label" for="bill-input">Bill</label>
+          <span id="span-error-1" class="">Can't be zero</span>
+        </div>
+        <input class="input" type="text" name="bill-input" id="bill-input" placeholder="0">
       </form>
 
       <div id="select-tip">
@@ -36,9 +39,9 @@
       <form id="peoples-form">
         <div class="container-label">
           <label class="label" for="people-qtd">Number of People</label>
-          <span class="">Can't be zero</span>
+          <span id="span-error-2" class="">Can't be zero</span>
         </div>
-        <input class="input" type="text" name="people-qtd" id="people-qtd" placeholder="0">
+        <input class="input" type="text" name="people-qtd" id="people-input" placeholder="0">
       </form>
     </div>
 
@@ -65,6 +68,7 @@
 
       <button id="reset-btn" class="">RESET</button>
 
+      <script src="script.js"></script>
     </div>
   </section>
 
