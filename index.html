@@ -27,36 +27,43 @@
         <span>Select Tip %</span>
         <button>5%</button>
         <button >10%</button>
-        <button class="active">15%</button>
+        <button class="">15%</button>
         <button>25%</button>
         <button>50%</button>
         <input type="text" name="" id="" placeholder="Custom">
       </div>
 
       <form id="peoples-form">
-        <label class="label" for="people-qtd">Number of People</label>
+        <div class="container-label">
+          <label class="label" for="people-qtd">Number of People</label>
+          <span class="">Can't be zero</span>
+        </div>
         <input class="input" type="text" name="people-qtd" id="people-qtd" placeholder="0">
       </form>
     </div>
 
     <div id="container-results">
 
-      <div id="tip-amount">
-        <div class="msg">
-          <span>Tip Amount</span>
-          <span>/ person</span>
+      <div class="results-constructor">
+
+        <div class="text-layout">
+          <span class="text-title">Tip Amount</span>
+          <span class="text-sub">/ person</span>
         </div>
-        <span class="value-span">$4.27</span>
 
+        <span class="text-results">$0.00</span>
+      </div>
+      <div class="results-constructor">
+
+        <div class="text-layout">
+          <span class="text-title">Total</span>
+          <span class="text-sub">/ person</span>
+        </div>
+
+        <span class="text-results">$0.00</span>
       </div>
 
-
-
-
-      <div id="total">
-
-
-      </div>
+      <button id="reset-btn" class="">RESET</button>
 
     </div>
   </section>

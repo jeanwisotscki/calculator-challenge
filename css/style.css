@@ -28,12 +28,20 @@ body {
   border-radius: 20px;
 }
 
-/* STYLES AND CLASSES FOR CONTAINER VALUES
-************************************************/
-
 button:hover {
   background-color: hsl(172, 80%, 72%) !important;
   color: hsl(183, 100%, 15%) !important;
+}
+
+/* STYLES AND CLASSES FOR CONTAINER VALUES
+************************************************/
+
+.error-span {
+  display: block !important;
+  color: rgb(209, 68, 68);
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 13px;
 }
 
 .label {
@@ -131,6 +139,15 @@ button:hover {
   border: 3px solid hsl(172, 67%, 45%) !important;
 }
 
+.container-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-label span {
+  display: none;
+}
+
 #peoples-form input {
   background: url(../images/icon-person.svg) no-repeat left, hsl(189, 41%, 97%);
   background-position: 20px;
@@ -138,33 +155,62 @@ button:hover {
 
 /* STYLES AND CLASSES FOR CONTAINER RESULTS
 ************************************************/
-#tip-amount {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  margin: 40px;
-}
-
-.msg {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 20px;
-}
-.value-span {
-  display: block;
-  margin-left: 50px;
-  font-size: 4rem;
-  font-weight: 700;
-  color: aquamarine;
-}
 
 #container-results {
   width: 45%;
+  box-sizing: border-box;
   background-color: hsl(183, 100%, 15%);
   margin-right: 10px;
   border-radius: 10px;
+}
+
+.results-constructor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.text-layout {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding-left: 20px;
+}
+
+.text-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+
+.text-sub {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(184, 14%, 56%);
+}
+
+.text-results {
+  width: 48%;
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}
+
+#reset-btn {
+  display: block;
+  width: 80%;
+  height: 45px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  background-color: hsla(172, 79%, 33%, 0.212);
+  margin: 0 auto;
+  margin-top: 85px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 /* GLOBAL CLASSES
