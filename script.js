@@ -13,10 +13,8 @@ function selectTipButton() {
         })
 
         button.classList.add('active')
-
         console.log(button.value)
     }
-
 
     tipButton.forEach((button) => {
         button.addEventListener('click', () => {
