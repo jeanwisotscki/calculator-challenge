@@ -16,6 +16,17 @@ function toggleActiveClass(button) {
     tipPercentage = button.value
 }
 
+
+resetButton.onclick = () => {
+    if (billInput.value === '' || isNaN(billInput.value)) {
+        alert('preencha o campo Bill')
+
+    } else if (tipPercentage == 0 || isNaN(tipPercentage)) {
+        alert('Selecione a gorjeta')
+    }
+}
+
+
 function calculate() {
     resetButton.onclick = () => {
 
@@ -25,14 +36,24 @@ function calculate() {
         const tipAmount = Number((bill * tipPercentage) / numberOfPeople)
         const total = Number(tipAmount + (bill / numberOfPeople))
 
-        tipResult.innerHTML = '$' + tipAmount.toFixed(2)
-        totalResult.innerHTML = '$' + total.toFixed(2)
+        if (billInput.value === '' || isNaN(billInput.value)) {
+            alert('preencha o campo Bill')
 
-        console.log(typeof bill)
-        console.log(typeof numberOfPeople)
-        console.log(typeof tipPercentage)
-        console.log(typeof tipAmount)
-        console.log(typeof total)
+        } else if (peopleInput.value === '' || isNaN(peopleInput.value)) {
+            alert('preencha o campo Number of People')
+        }
+
+        if (tipAmount != Infinity && total != Infinity) {
+            tipResult.innerHTML = '$' + tipAmount.toFixed(2)
+            totalResult.innerHTML = '$' + total.toFixed(2)
+        } else {
+            tipResult.innerHTML = '$0.00'
+            totalResult.innerHTML = '$0.00'
+            alert('Please, check that all fields are filled.')
+        }
+
+
+
     }
 }
 
