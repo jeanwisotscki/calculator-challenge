@@ -27,7 +27,7 @@ resetButton.onclick = () => {
 }
 
 
-function calculate() {
+function calculateTip() {
     resetButton.onclick = () => {
 
         tipPercentage = Number(tipPercentage)
@@ -51,9 +51,6 @@ function calculate() {
             totalResult.innerHTML = '$0.00'
             alert('Please, check that all fields are filled.')
         }
-
-
-
     }
 }
 
@@ -61,6 +58,6 @@ tipButton.forEach((btn) => {
     btn.addEventListener('click', () => {
 
         toggleActiveClass(btn)
-        calculate()
+        calculateTip()
     })
 })
