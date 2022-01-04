@@ -16,7 +16,6 @@ function toggleActiveClass(button) {
     tipPercentage = button.value
 }
 
-
 resetButton.onclick = () => {
     if (billInput.value === '' || isNaN(billInput.value)) {
         alert('preencha o campo Bill')
@@ -25,7 +24,6 @@ resetButton.onclick = () => {
         alert('Selecione a gorjeta')
     }
 }
-
 
 function calculateTip() {
     resetButton.onclick = () => {
