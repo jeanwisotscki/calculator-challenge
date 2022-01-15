@@ -1,80 +1,26 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Space+Mono&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Tip Calculator App</title>  
-</head>
+        <title>Frontend Mentor | Tip Calculator App</title>  
+    </head>
+    <body>
+        
 
-<body>
-  <img class="logo" src="images/logo.svg">
 
-  <section id="container">
-    <div id="container-values">
-
-      <form id="bill-form">
-        <div class="container-label">
-          <label class="label" for="bill-input">Bill</label>
-          <span id="span-error-1" class="">Can't be zero</span>
-        </div>
-        <input id="bill-input" class="input" type="text" name="bill-input" placeholder="0">
-      </form>
-
-      <div id="select-tip">
-        <span>Select Tip %</span>
-        <button value="0.05">5%</button>
-        <button value="0.10">10%</button>
-        <button value="0.15">15%</button>
-        <button value="0.25">25%</button>
-        <button value="0.50">50%</button>
-        <input type="text" name="" id="" placeholder="Custom">
-      </div>
-
-      <form id="peoples-form">
-        <div class="container-label">
-          <label class="label" for="people-qtd">Number of People</label>
-          <span id="span-error-2" class="">Can't be zero</span>
-        </div>
-        <input id="people-input" class="input" type="text" name="people-qtd" placeholder="0">
-      </form>
-    </div>
-
-    <div id="container-results">
-      <div class="results-constructor">
-
-        <div class="text-layout">
-          <span class="text-title">Tip Amount</span>
-          <span class="text-sub">/ person</span>
+    
+        <div>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Jean Wisotscki</a>.
         </div>
 
-        <span id="tip-value" class="text-results">$0.00</span>
-      </div>
-      
-      <div class="results-constructor">
-
-        <div class="text-layout">
-          <span class="text-title">Total</span>
-          <span class="text-sub">/ person</span>
-        </div>
-
-        <span id="total-value" class="text-results">$0.00</span>
-      </div>
-
-      <button id="reset-btn" class="">RESET</button>      
-    </div>
-  </section>
-  
-  <div class="center-text">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jean Wisotscki</a>.
-  </div>
-
-  <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
