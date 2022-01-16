@@ -34,7 +34,74 @@ body {
 .card {
   background-color: white;
   width: 95%;
-  height: 50vh;
   border-radius: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 2.5rem;
+}
+
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.card .input .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .input .label-wrapper label {
+  color: #5e7a7d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .input .label-wrapper .error-msg {
+  color: tomato;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card .input .inp-text {
+  background-color: #f4fafa;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: "Space Mono", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.card .output {
+  background-color: #00494d;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

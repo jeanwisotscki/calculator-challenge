@@ -19,11 +19,36 @@
 
             <div class="card">
                 <div class="input">
-                    teste
-                </div>
-                
-                <div class="output">
+                    <div class="bill-container">
+                        <div class="label-wrapper">
+                            <label for="inp-bill">Bill</label>
+                        </div>
+                        <div class="inp-wrapper">
+                            <input type="text" class="inp-text" id="inp-bill" placeholder="0">
+                            <img src="./images/icon-dollar.svg" alt="dollar icon">
+                        </div>
+                    </div>
 
+                    <div class="tip-container">
+                        <div class="label-wrapper">
+                            <label for="inp-tip">Select Tip %</label>
+                        </div>
+                    </div>
+
+                    <div class="people-container">
+                        <div class="label-wrapper">
+                            <label for="inp-people">Number of People</label>
+                            <div class="error-msg">Can't be zero</div>
+                        </div>
+                        <div class="inp-wrapper">
+                            <input type="text" class="inp-text" id="inp-people" placeholder="1">
+                            <img src="./images/icon-person.svg" alt="person icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="output">
+                    <p>output</p>
                 </div>
             </div>
         </div>
