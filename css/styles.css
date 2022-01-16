@@ -88,6 +88,7 @@ body {
   color: #dd4040;
   font-weight: 700;
   font-size: 1.3rem;
+  display: none;
 }
 
 .card .input .inp-text {
@@ -145,7 +146,14 @@ body {
   border: none;
   border-radius: 0.5rem;
   padding: 0.6rem 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
+}
+
+.card .input .btn-wrapper .btn:hover {
+  background-color: #9fe8df;
+  color: #00494d;
 }
 
 .card .input .btn-wrapper .btn-active {
@@ -160,5 +168,59 @@ body {
 .card .output {
   background-color: #00494d;
   width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.2rem;
+}
+
+.card .output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.card .output .line-wrapper .line-output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.card .output .line-wrapper .line-output .desc {
+  color: #7f9c9f;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card .output .line-wrapper .line-output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card .output .btn {
+  width: 100%;
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 3.4rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card .output .btn:hover {
+  background-color: #9fe8df;
 }
 /*# sourceMappingURL=styles.css.map */
