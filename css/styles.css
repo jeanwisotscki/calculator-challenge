@@ -19,21 +19,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .logo {
-  margin: 5rem 0 3.5rem 0;
+  margin: 2rem 0;
 }
 
 .card {
   background-color: white;
-  width: 100%;
+  max-width: 60rem;
+  width: 90%;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   display: -webkit-box;
@@ -43,14 +41,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 3rem;
   padding: 2.5rem;
+  border: 1px solid red;
 }
 
 .card .input {

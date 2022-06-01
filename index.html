@@ -1,83 +1,26 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Space+Mono&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-        <title>Frontend Mentor | Tip Calculator App</title>  
-    </head>
-    <body>
-        <div class="container">
-            <div class="logo">
-                <img src="./images/logo.svg" alt="image logo">
-            </div>
-
-            <div class="card">
-                <div class="input">
-                    <div class="bill-container">
-                        <div class="label-wrapper">
-                            <label for="inp-bill">Bill</label>
-                        </div>
-                        <div class="inp-wrapper">
-                            <input type="text" class="inp-text" id="inp-bill" placeholder="0">
-                            <img src="./images/icon-dollar.svg" alt="dollar icon">
-                        </div>
-                    </div>
-
-                    <div class="tip-container">
-                        <div class="label-wrapper">
-                            <label for="inp-tip">Select Tip %</label>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn">5%</button>
-                            <button class="btn">10%</button>
-                            <button class="btn btn-active">15%</button>
-                            <button class="btn">25%</button>
-                            <button class="btn">50%</button>
-                            <input type="text" class="inp-text" id="inp-tip" placeholder="Custom">
-                        </div>
-                    </div>
-
-                    <div class="people-container">
-                        <div class="label-wrapper">
-                            <label for="inp-people">Number of People</label>
-                            <div class="error-msg">Can't be zero</div>
-                        </div>
-                        <div class="inp-wrapper">
-                            <input type="text" class="inp-text" id="inp-people" placeholder="1">
-                            <img src="./images/icon-person.svg" alt="person icon">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="output">
-                    <div class="line-wrapper">
-                        <div class="line-output">
-                            <div class="title-wrapper">
-                                <h3 class="title">Tip Amount</h3>
-                                <span class="desc">/ person</span>
-                            </div>
-                            <span class="value">$00.00</span>
-                        </div>
-
-                        <div class="line-output">
-                            <div class="title-wrapper">
-                                <h3 class="title">Total</h3>
-                                <span class="desc">/ person</span>
-                            </div>
-                            <span class="value">$00.00</span>
-                        </div>
-                    </div>
-                    <button class="btn">Reset</button>
-                </div>
-            </div>
-        </div>
-
-        <script src="./js/app.js"></script>
-    </body>
+    <title>Frontend Mentor | Tip Calculator App</title>
+  </head>
+  <body>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
