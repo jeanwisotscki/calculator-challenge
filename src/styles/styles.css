@@ -1,12 +1,81 @@
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3rem auto;
+}
+
+.app {
+  background-color: white;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.app .inputs-box .bill {
+  margin-bottom: 2rem;
+}
+
+.app .inputs-box .bill .bill-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f4fafa;
+  border-radius: 4px;
+}
+
+.app .inputs-box .bill .bill-input .dollar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+}
+
+.app .inputs-box .bill .bill-input input {
+  width: 100%;
+  color: #00494d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 0.4rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
 body {
-  font-family: "Space Mono", monospace;
   background-color: #c5e4e7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+.label {
+  color: #5e7a7d;
+  font-weight: bold;
+  margin-bottom: .5rem;
 }
 /*# sourceMappingURL=styles.css.map */

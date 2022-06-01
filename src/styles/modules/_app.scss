@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+
+.app {
+  background-color: $white;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 2rem;
+
+  .inputs-box {
+    .bill {
+      margin-bottom: 2rem;
+
+      .bill-input {
+        display: flex;
+        background-color: $light-grayish-cyan-2;
+        border-radius: 4px;
+
+        .dollar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+        }
+
+        input {
+          width: 100%;
+          color: $very-dark-cyan;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-align: right;
+          padding: 0.4rem 1rem;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}

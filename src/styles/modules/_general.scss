@@ -2,9 +2,24 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
 body {
-  font-family: "Space Mono", monospace;
   background-color: $light-grayish-cyan-1;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+li{
+  list-style: none;
+}
+
+.label{
+  color: $dark-grayish-cyan-1;
+  font-weight: bold;
+  margin-bottom: .5rem;
 }
