@@ -7,5 +7,5 @@ $light-grayish-cyan-2: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
 $btn-hover: rgb(159, 232, 223);
 
-@import "general";
-@import "app";
+@import './modules/app';
+@import './modules/general';
