@@ -21,6 +21,66 @@
     <title>Frontend Mentor | Tip Calculator App</title>
   </head>
   <body>
+    <section class="logo">
+      <img src="./src/images/logo.svg" alt="logo image" />
+    </section>
+    <section class="app">
+      <section class="inputs-box">
+        <div class="bill">
+          <p class="label">Bill</p>
+          <input type="text" id="bill" />
+        </div>
+        <div class="select-tip">
+          <p class="label" for="tip">Select Tip %</p>
+          <ul class="tips">
+            <li class="tip">
+              <button>5%</button>
+            </li>
+            <li class="tip">
+              <button>10%</button>
+            </li>
+            <li class="tip">
+              <button>15%</button>
+            </li>
+            <li class="tip">
+              <button>25%</button>
+            </li>
+            <li class="tip">
+              <button>50%</button>
+            </li>
+            <li class="tip">
+              <input type="text" id="custom-tip" />
+            </li>
+          </ul>
+        </div>
+        <div class="number-of-people">
+          <p class="label">Number os People</p>
+          <input type="text" id="number-people" />
+        </div>
+      </section>
+
+      <section class="results-box">
+        <div class="result-item">
+          <div class="description">
+            <p class="title">Tip Amount</p>
+            <p class="subtitle">/ person</p>
+          </div>
+          <div class="value-box">
+            <span class="value">$--.--</span>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="description">
+            <p class="title">Total</p>
+            <p class="subtitle">/ person</p>
+          </div>
+          <div class="value-box">
+            <span class="value">$--.--</span>
+          </div>
+        </div>
+        <button>reset</button>
+      </section>
+    </section>
     <script src="./src/js/app.js"></script>
   </body>
 </html>
