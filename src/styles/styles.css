@@ -9,6 +9,7 @@
 }
 
 .app {
+  min-width: 305px;
   background-color: white;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -212,7 +213,7 @@
   font-weight: bold;
   text-transform: uppercase;
   border: 0;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-top: 1rem;
   border-radius: 5px;
 }
@@ -223,6 +224,40 @@
 
 .app .results-box .btn-reset:disabled {
   opacity: 0.25;
+}
+
+@media screen and (min-width: 769px) {
+  .app {
+    max-width: 60rem;
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    margin-bottom: 7rem;
+  }
+  .app .results-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .app .results-box .result-item {
+    margin-bottom: 1.5rem;
+  }
+  .app .results-box .result-item .value-box .value {
+    font-size: 2.5rem;
+  }
 }
 
 * {
