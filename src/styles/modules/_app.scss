@@ -112,4 +112,46 @@
       }
     }
   }
+
+  .results-box{
+    background-color: $very-dark-cyan;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+
+    .result-item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      .description{
+        .title{
+          color: $white;
+        }
+
+        .subtitle{
+          color: $light-grayish-cyan-1;
+        }
+      }
+      .value-box{
+        .value{
+          color: $strong-cyan;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .btn-reset{
+      background-color: $strong-cyan;
+      color: $very-dark-cyan;
+      width: 100%;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 0;
+      padding: .5rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+  }
 }
