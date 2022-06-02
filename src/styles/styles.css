@@ -27,6 +27,11 @@
   border-radius: 5px;
 }
 
+.app .inputs-box .bill .bill-input:hover, .app .inputs-box .bill .bill-input:focus {
+  -webkit-box-shadow: 0 0 0 3px #26c0ab;
+          box-shadow: 0 0 0 3px #26c0ab;
+}
+
 .app .inputs-box .bill .bill-input .dollar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +80,11 @@
   color: white;
 }
 
+.app .inputs-box .select-tip .tips .tip button:hover {
+  background-color: #9fe8df;
+  color: #00494d;
+}
+
 .app .inputs-box .select-tip .tips .tip input {
   width: 100%;
   font-size: 1.5rem;
@@ -104,9 +114,19 @@
   color: #5e7a7d;
 }
 
-.app .inputs-box .select-tip .tips .tip input:hover, .app .inputs-box .select-tip .tips .tip input:focus {
+.app .inputs-box .select-tip .tips .tip input:hover {
   -webkit-box-shadow: 0 0 0 3px #26c0ab;
           box-shadow: 0 0 0 3px #26c0ab;
+}
+
+.app .inputs-box .select-tip .tips .tip input:focus {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.app .inputs-box .select-tip .tips .tip > .active {
+  background-color: #26c0ab;
+  color: #00494d;
 }
 
 .app .inputs-box .number-of-people {
@@ -119,6 +139,11 @@
   display: flex;
   background-color: #f4fafa;
   border-radius: 5px;
+}
+
+.app .inputs-box .number-of-people .person-input:hover, .app .inputs-box .number-of-people .person-input:focus {
+  -webkit-box-shadow: 0 0 0 3px #26c0ab;
+          box-shadow: 0 0 0 3px #26c0ab;
 }
 
 .app .inputs-box .number-of-people .person-input .person {
@@ -176,6 +201,7 @@
 .app .results-box .result-item .value-box .value {
   color: #26c0ab;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .app .results-box .btn-reset {
@@ -189,6 +215,14 @@
   padding: .5rem;
   margin-top: 1rem;
   border-radius: 5px;
+}
+
+.app .results-box .btn-reset:hover:not(:disabled) {
+  background-color: #9fe8df;
+}
+
+.app .results-box .btn-reset:disabled {
+  opacity: 0.25;
 }
 
 * {
