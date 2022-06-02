@@ -24,7 +24,7 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #f4fafa;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .app .inputs-box .bill .bill-input .dollar {
@@ -41,6 +41,100 @@
 }
 
 .app .inputs-box .bill .bill-input input {
+  width: 100%;
+  color: #00494d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 0.4rem 1rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.app .inputs-box .select-tip {
+  margin-bottom: 2rem;
+}
+
+.app .inputs-box .select-tip .tips {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.app .inputs-box .select-tip .tips .tip button {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #00494d;
+  color: white;
+}
+
+.app .inputs-box .select-tip .tips .tip input {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #f4fafa;
+  color: #00494d;
+  text-align: center;
+  outline: none;
+}
+
+.app .inputs-box .select-tip .tips .tip input::-webkit-input-placeholder {
+  color: #5e7a7d;
+}
+
+.app .inputs-box .select-tip .tips .tip input:-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.app .inputs-box .select-tip .tips .tip input::-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.app .inputs-box .select-tip .tips .tip input::placeholder {
+  color: #5e7a7d;
+}
+
+.app .inputs-box .select-tip .tips .tip input:hover, .app .inputs-box .select-tip .tips .tip input:focus {
+  -webkit-box-shadow: 0 0 0 3px #26c0ab;
+          box-shadow: 0 0 0 3px #26c0ab;
+}
+
+.app .inputs-box .number-of-people {
+  margin-bottom: 2rem;
+}
+
+.app .inputs-box .number-of-people .person-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f4fafa;
+  border-radius: 5px;
+}
+
+.app .inputs-box .number-of-people .person-input .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+}
+
+.app .inputs-box .number-of-people .person-input input {
   width: 100%;
   color: #00494d;
   font-size: 1.5rem;

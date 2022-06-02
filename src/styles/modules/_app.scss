@@ -10,32 +10,104 @@
   border-top-right-radius: 1.5rem;
   padding: 2rem;
 
+  @mixin default-div-input {
+    display: flex;
+    background-color: $light-grayish-cyan-2;
+    border-radius: 5px;
+  }
+
+  @mixin input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+  }
+
+  @mixin default-input {
+    width: 100%;
+    color: $very-dark-cyan;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 0.4rem 1rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
   .inputs-box {
     .bill {
       margin-bottom: 2rem;
 
       .bill-input {
-        display: flex;
-        background-color: $light-grayish-cyan-2;
-        border-radius: 4px;
+        @include default-div-input;
 
         .dollar {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 50px;
+          @include input-icon;
         }
 
         input {
-          width: 100%;
-          color: $very-dark-cyan;
-          font-size: 1.5rem;
-          font-weight: bold;
-          text-align: right;
-          padding: 0.4rem 1rem;
-          background: none;
-          border: none;
-          outline: none;
+          @include default-input;
+        }
+      }
+    }
+
+    .select-tip {
+      margin-bottom: 2rem;
+
+      .tips {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        .tip {
+          @mixin default-btn-tip {
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.4rem;
+            border-radius: 5px;
+            border: none;
+          }
+
+          button {
+            @include default-btn-tip;
+            background-color: $very-dark-cyan;
+            color: $white;
+          }
+
+          input {
+            @include default-btn-tip;
+            background-color: $light-grayish-cyan-2;
+            color: $very-dark-cyan;
+            text-align: center;
+            outline: none;
+
+            &::placeholder {
+              color: $dark-grayish-cyan-1;
+            }
+
+            &:hover,
+            &:focus {
+              box-shadow: 0 0 0 3px $strong-cyan;
+            }
+          }
+        }
+      }
+    }
+
+    .number-of-people {
+      margin-bottom: 2rem;
+
+      .person-input {
+        @include default-div-input;
+
+        .person {
+          @include input-icon;
+        }
+
+        input {
+          @include default-input;
         }
       }
     }
