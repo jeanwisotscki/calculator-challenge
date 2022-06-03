@@ -125,7 +125,7 @@
           box-shadow: 0 0 0 3px #26c0ab;
 }
 
-.app .inputs-box .select-tip .tips .tip .custom-tip:focus {
+.app .inputs-box .select-tip .tips .tip .custom-tip:focus, .app .inputs-box .select-tip .tips .tip .custom-tip.active {
   text-align: right;
   padding-right: 1rem;
   -webkit-box-shadow: 0 0 0 3px #26c0ab;
@@ -279,10 +279,14 @@ img {
   display: block;
 }
 
-button {
+button:not(:disabled) {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
 
 input {

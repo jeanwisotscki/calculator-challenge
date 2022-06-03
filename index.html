@@ -32,7 +32,13 @@
             <span class="dollar">
               <img src="./src/images/icon-dollar.svg" alt="icon dollar" />
             </span>
-            <input type="text" id="bill" placeholder="0" />
+            <input
+              type="text"
+              id="bill"
+              placeholder="0"
+              onkeypress="return isNumber(event)"
+              maxlength="6"
+            />
           </div>
         </div>
         <div class="select-tip">
@@ -54,7 +60,13 @@
               <button>50%</button>
             </li>
             <li class="tip">
-              <input class="custom-tip" type="text" placeholder="Custom" />
+              <input
+                class="custom-tip"
+                type="text"
+                placeholder="Custom"
+                onkeypress="return isNumber(event)"
+                maxlength="3"
+              />
             </li>
           </ul>
         </div>
@@ -64,7 +76,13 @@
             <span class="person">
               <img src="./src/images/icon-person.svg" alt="icon person" />
             </span>
-            <input type="text" id="number-people" placeholder="0" />
+            <input
+              type="text"
+              id="number-people"
+              placeholder="0"
+              onkeypress="return isNumber(event)"
+              maxlength="6"
+            />
           </div>
         </div>
       </section>

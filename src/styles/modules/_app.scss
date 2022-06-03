@@ -91,7 +91,7 @@
               color: $very-dark-cyan;
             }
           }
-          
+
           .custom-tip {
             @include default-btn-tip;
             background-color: $light-grayish-cyan-2;
@@ -107,7 +107,8 @@
               box-shadow: 0 0 0 3px $strong-cyan;
             }
   
-            &:focus {
+            &:focus,
+            &.active {
               text-align: right;
               padding-right: 1rem;
               box-shadow: 0 0 0 3px $strong-cyan;

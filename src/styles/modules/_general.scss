@@ -14,9 +14,13 @@ img{
   display: block;
 }
 
-button{
+button:not(:disabled){
   cursor: pointer;
   transition: .3s;
+}
+
+button:disabled{
+  cursor: not-allowed;
 }
 
 input{
