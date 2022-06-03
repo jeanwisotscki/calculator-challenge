@@ -1,11 +1,26 @@
 const billInput = document.querySelector("#bill");
-const tipsOptions = document.querySelectorAll(".tips .tip");
+const tipsOptions = document.querySelectorAll(".tip");
 const customTip = document.querySelector(".custom-tip");
 const numberOfPeopleInput = document.querySelector("#number-people");
+const btnReset = document.querySelector(".btn-reset");
+let activeTip;
 
-console.log(billInput);
+// ativada via click no event listener do btnReset
+function handleCalculate() {
+  const billValue = Number(billInput.value);
+  const tipValue = Number(activeTip.value);
+  const peopleNumber = Number(numberOfPeopleInput.value);
 
-// adiciona a classe 'active' à opção de gorjeta selecionada
+  if (billValue && tipValue && peopleNumber) {
+    const tip = billValue * (tipValue / 100);
+    const tipAmount = tip / peopleNumber;
+    const totalPerson = (billValue + tip) / peopleNumber;
+
+    console.log(tip, tipAmount, totalPerson);
+  }
+}
+
+// faz o toggle da classe 'active' à opção de gorjeta selecionada
 function handleActiveTip(tip) {
   tip.addEventListener("click", () => {
     tipsOptions.forEach((tip) => {
@@ -15,6 +30,11 @@ function handleActiveTip(tip) {
     });
     tip.classList.add("active");
     tip.children[0].classList.add("active");
+
+    // seleciona a gorjeta com a classe 'active'
+    if (tip.classList.contains("active")) {
+      activeTip = tip.children[0];
+    }
   });
 }
 
@@ -34,6 +54,15 @@ function isNumber(event) {
 
 /* Event Listeners
  **************************************************/
+
+btnReset.addEventListener("click", handleCalculate);
+
+// remove o disabled do botão
+billInput.addEventListener("input", () => {
+  if (billInput.value) {
+    btnReset.removeAttribute("disabled");
+  }
+});
 
 // efeito focus na div do input bill
 const billInputDiv = document.querySelector(".bill-input");
