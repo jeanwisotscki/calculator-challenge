@@ -28,7 +28,7 @@
   border-radius: 5px;
 }
 
-.app .inputs-box .bill .bill-input:hover, .app .inputs-box .bill .bill-input:focus {
+.app .inputs-box .bill .bill-input:hover, .app .inputs-box .bill .bill-input.active {
   -webkit-box-shadow: 0 0 0 3px #26c0ab;
           box-shadow: 0 0 0 3px #26c0ab;
 }
@@ -86,7 +86,12 @@
   color: #00494d;
 }
 
-.app .inputs-box .select-tip .tips .tip input {
+.app .inputs-box .select-tip .tips .tip button.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.app .inputs-box .select-tip .tips .tip .custom-tip {
   width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
@@ -99,35 +104,32 @@
   outline: none;
 }
 
-.app .inputs-box .select-tip .tips .tip input::-webkit-input-placeholder {
+.app .inputs-box .select-tip .tips .tip .custom-tip::-webkit-input-placeholder {
   color: #5e7a7d;
 }
 
-.app .inputs-box .select-tip .tips .tip input:-ms-input-placeholder {
+.app .inputs-box .select-tip .tips .tip .custom-tip:-ms-input-placeholder {
   color: #5e7a7d;
 }
 
-.app .inputs-box .select-tip .tips .tip input::-ms-input-placeholder {
+.app .inputs-box .select-tip .tips .tip .custom-tip::-ms-input-placeholder {
   color: #5e7a7d;
 }
 
-.app .inputs-box .select-tip .tips .tip input::placeholder {
+.app .inputs-box .select-tip .tips .tip .custom-tip::placeholder {
   color: #5e7a7d;
 }
 
-.app .inputs-box .select-tip .tips .tip input:hover {
+.app .inputs-box .select-tip .tips .tip .custom-tip:hover {
   -webkit-box-shadow: 0 0 0 3px #26c0ab;
           box-shadow: 0 0 0 3px #26c0ab;
 }
 
-.app .inputs-box .select-tip .tips .tip input:focus {
+.app .inputs-box .select-tip .tips .tip .custom-tip:focus {
   text-align: right;
   padding-right: 1rem;
-}
-
-.app .inputs-box .select-tip .tips .tip > .active {
-  background-color: #26c0ab;
-  color: #00494d;
+  -webkit-box-shadow: 0 0 0 3px #26c0ab;
+          box-shadow: 0 0 0 3px #26c0ab;
 }
 
 .app .inputs-box .number-of-people {
@@ -142,7 +144,7 @@
   border-radius: 5px;
 }
 
-.app .inputs-box .number-of-people .person-input:hover, .app .inputs-box .number-of-people .person-input:focus {
+.app .inputs-box .number-of-people .person-input:hover, .app .inputs-box .number-of-people .person-input.active {
   -webkit-box-shadow: 0 0 0 3px #26c0ab;
           box-shadow: 0 0 0 3px #26c0ab;
 }
@@ -275,6 +277,17 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+input {
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 li {

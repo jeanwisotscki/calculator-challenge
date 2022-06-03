@@ -17,7 +17,7 @@
     border-radius: 5px;
 
     &:hover,
-    &:focus {
+    &.active {
       box-shadow: 0 0 0 3px $strong-cyan;
     }
   }
@@ -66,16 +66,16 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
 
-        .tip {
-          @mixin default-btn-tip {
-            width: 100%;
-            font-size: 1.5rem;
-            font-weight: bold;
-            padding: 0.4rem;
-            border-radius: 5px;
-            border: none;
-          }
+        @mixin default-btn-tip {
+          width: 100%;
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding: 0.4rem;
+          border-radius: 5px;
+          border: none;
+        }
 
+        .tip {
           button {
             @include default-btn-tip;
             background-color: $very-dark-cyan;
@@ -85,34 +85,36 @@
               background-color: $btn-hover;
               color: $very-dark-cyan;
             }
-          }
 
-          input {
+            &.active {
+              background-color: $strong-cyan;
+              color: $very-dark-cyan;
+            }
+          }
+          
+          .custom-tip {
             @include default-btn-tip;
             background-color: $light-grayish-cyan-2;
             color: $very-dark-cyan;
             text-align: center;
             outline: none;
-
+  
             &::placeholder {
               color: $dark-grayish-cyan-1;
             }
-
+  
             &:hover {
               box-shadow: 0 0 0 3px $strong-cyan;
             }
-
+  
             &:focus {
               text-align: right;
               padding-right: 1rem;
+              box-shadow: 0 0 0 3px $strong-cyan;
             }
           }
-
-          & > .active {
-            background-color: $strong-cyan;
-            color: $very-dark-cyan;
-          }
         }
+        
       }
     }
 
