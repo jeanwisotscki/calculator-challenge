@@ -7,9 +7,18 @@ let activeTip;
 
 // ativada via click no event listener do btnReset
 function handleCalculate() {
-  const billValue = Number(billInput.value);
-  const tipValue = Number(activeTip.value);
-  const peopleNumber = Number(numberOfPeopleInput.value);
+  const billValue =
+    billInput.value > 0
+      ? Number(billInput.value)
+      : alert("bota o valor da conta aí, po");
+  const tipValue =
+    activeTip.value > 0
+      ? Number(activeTip.value)
+      : alert("escolhe a gorjeta, po");
+  const peopleNumber =
+    numberOfPeopleInput.value > 0
+      ? Number(numberOfPeopleInput.value)
+      : alert("faltou o numero de pessoas, pô");
 
   if (billValue && tipValue && peopleNumber) {
     const tip = billValue * (tipValue / 100);
