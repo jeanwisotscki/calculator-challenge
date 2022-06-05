@@ -16,8 +16,16 @@ function handleCalculate() {
     const tipAmount = tip / peopleNumber;
     const totalPerson = (billValue + tip) / peopleNumber;
 
-    console.log(tip, tipAmount, totalPerson);
+    handleResults(tipAmount, totalPerson);
   }
+}
+
+function handleResults(tipAmount, totalPerson) {
+  const tipAmountSpan = document.querySelector("#tip-amount");
+  const totalPersonSpan = document.querySelector("#total-person");
+
+  tipAmountSpan.innerText = `$${tipAmount.toFixed(2)}`;
+  totalPersonSpan.innerText = `$${totalPerson.toFixed(2)}`;
 }
 
 // faz o toggle da classe 'active' à opção de gorjeta selecionada
