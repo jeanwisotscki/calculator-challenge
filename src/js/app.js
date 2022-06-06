@@ -1,24 +1,37 @@
+let activeTip;
 const billInput = document.querySelector("#bill");
 const tipsOptions = document.querySelectorAll(".tip");
 const customTip = document.querySelector(".custom-tip");
 const numberOfPeopleInput = document.querySelector("#number-people");
-const btnReset = document.querySelector(".btn-reset");
-let activeTip;
 
-// ativada via click no event listener do btnReset
+const btnCalculate = document.querySelector(".btn-calculate");
+
+const billErrorSpan = document.querySelector("#bill-error");
+const tipErrorSpan = document.querySelector("#tip-error");
+const peopleErrorSpan = document.querySelector("#people-error");
+
+// adiciona a classe error nos inputs que estiverem vazios
+function handleErrorClass(element) {
+  element.classList.add("error");
+  setTimeout(() => {
+    element.classList.remove("error");
+  }, 3000);
+}
+
+// ativada via click no event listener do btnCalculate
 function handleCalculate() {
   const billValue =
-    billInput.value > 0
+    billInput.value !== "" && billInput.value > 0
       ? Number(billInput.value)
-      : alert("bota o valor da conta aí, po");
+      : handleErrorClass(billErrorSpan);
   const tipValue =
-    activeTip.value > 0
+    activeTip.value !== "" && activeTip.value > 0
       ? Number(activeTip.value)
-      : alert("escolhe a gorjeta, po");
+      : handleErrorClass(tipErrorSpan);
   const peopleNumber =
-    numberOfPeopleInput.value > 0
+    numberOfPeopleInput.value !== "" && numberOfPeopleInput.value > 0
       ? Number(numberOfPeopleInput.value)
-      : alert("faltou o numero de pessoas, pô");
+      : handleErrorClass(peopleErrorSpan);
 
   if (billValue && tipValue && peopleNumber) {
     const tip = billValue * (tipValue / 100);
@@ -72,12 +85,12 @@ function isNumber(event) {
 /* Event Listeners
  **************************************************/
 
-btnReset.addEventListener("click", handleCalculate);
+btnCalculate.addEventListener("click", handleCalculate);
 
 // remove o disabled do botão
-billInput.addEventListener("input", () => {
-  if (billInput.value) {
-    btnReset.removeAttribute("disabled");
+document.addEventListener("input", () => {
+  if (billInput.value && numberOfPeopleInput.value) {
+    btnCalculate.removeAttribute("disabled");
   }
 });
 

@@ -9,30 +9,46 @@ body {
   background-color: $light-grayish-cyan-1;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
 
-button:not(:disabled){
+button:not(:disabled) {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-button:disabled{
+button:disabled {
   cursor: not-allowed;
 }
 
-input{
-  transition: .3s;
+input {
+  transition: 0.3s;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.label{
-  color: $dark-grayish-cyan-1;
-  font-weight: bold;
-  margin-bottom: .5rem;
+.texts {
+  display: flex;
+  justify-content: space-between;
+
+  .label {
+    color: $dark-grayish-cyan-1;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  span {
+    display: none;
+    
+    &.error {
+      display: block;
+      color: tomato;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
