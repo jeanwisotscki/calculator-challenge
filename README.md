@@ -1,4 +1,4 @@
-# Projeto | Calculator App
+# Projeto | Tip Calculator App
 
 ### Desenvolvido como projeto de estudo.
 
