@@ -74,12 +74,13 @@ tipsOptions.forEach((tip) => {
 
 // validação para os inputs (ativada direto no html)
 function isNumber(event) {
-  event = event ? event : window.event;
-  var charCode = event.which ? event.which : event.keyCode;
-  if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-    return false;
+  if (event) {
+    const charCode = event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
   }
-  return true;
 }
 
 /* Event Listeners
